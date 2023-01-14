@@ -15,16 +15,29 @@ export async function getStaticProps() {
 }
 
 export default function Home({ allPostsData }) {
+
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Hi, my name is Mykolas Stramkauskas. I am learning Next.js so I could become front end developer in the future.</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+        <p>Hi, my name is Mykolas Stramkauskas. I am front end developer.</p>
+        <p>I am using this blog site to show my work.</p>
+        <p>You can find me on 
+          <a href="https://www.linkedin.com/in/mykolas-stramkauskas-625850165/" target="_blank"> Linkedin </a>
+            or you can email me on 
+          <a href='mailto:msmykolas@gmail.com' target="_blank"> msmykolas@gmail.com</a>
+         </p>
+        <p>Here is my <a href="https://github.com/myka1" target="_blank">GitHub</a></p>
+        <p>You can download my CV here: 
+          <a
+            href="/files/Mykolas_Stramkauskas.pdf"
+            alt="link to cv"
+            target="_blank"
+            rel="noopener noreferrer"
+            > Link
+          </a>
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
